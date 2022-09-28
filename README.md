@@ -29,7 +29,7 @@ forecast = predictor.predict()
 
 
 fig = predictor.plot_result(forecast)
-fig.savefig(os.path.join("Your target dir path", "Your target file name))
+fig.savefig(os.path.join("Your target dir path", "Your target file name"))
 ```
 
 
