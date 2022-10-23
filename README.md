@@ -6,7 +6,7 @@
 
 The input data type should be `pandas.DataFrame` with Columns name ["Timestamp","Value"]
 
-Note: All Timestamp data should be reformated as DateTime (i.e. year-month-day hour:mint:second)
+Note: All Timestamp data should be reformated as DateTime (i.e. year-month-day hour:minute:second)
 
 Example as follows:
 
