@@ -41,8 +41,9 @@ class MLPredictor(object):
         print(f"After rename columns \n{data_df.columns}")
         return data_df
 
-    def __make_future(self, periods=15):
-        future = self.__trainer.make_future_dataframe(periods=periods)
+    def __make_future(self, periods=15, freq='10min'):
+        # Data is averaged in 10 minute intervals, so predict 15 intervals ahead
+        future = self.__trainer.make_future_dataframe(periods=periods, freq=freq)
         return future
 
     def predict(self):
